@@ -30,7 +30,7 @@ dependencies {
 	
 	// Swagger/OpenAPI dependencies
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
-	implementation 'io.swagger.core.v3:swagger-annotations:2.2.8'
+	// No need to explicitly declare swagger-annotations as it comes with springdoc
 	
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

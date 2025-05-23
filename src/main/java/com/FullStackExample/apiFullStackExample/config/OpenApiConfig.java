@@ -17,25 +17,25 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API Biblioteca - Sistema de Gestión de Libros")
-                        .description("API REST para la gestión de una biblioteca digital. " +
-                                   "Permite realizar operaciones CRUD sobre libros, así como búsquedas avanzadas " +
-                                   "por diferentes criterios como autor, categoría, año de publicación, etc.")
+                        .title("Library API - Book Management System")
+                        .description("REST API for digital library management. " +
+                                   "Supports CRUD operations on books, as well as advanced searches " +
+                                   "by different criteria such as author, category, publication year, etc.")
                         .version("v1.0.0")
                         .contact(new Contact()
-                                .name("Equipo de Desarrollo")
-                                .email("dev@biblioteca.com")
-                                .url("https://github.com/tu-usuario/biblioteca-api"))
+                                .name("Development Team")
+                                .email("dev@library.com")
+                                .url("https://github.com/your-username/library-api"))
                         .license(new License()
                                 .name("MIT License")
                                 .url("https://opensource.org/licenses/MIT")))
                 .servers(List.of(
                         new Server()
                                 .url("http://localhost:8080")
-                                .description("Servidor de Desarrollo"),
+                                .description("Development Server"),
                         new Server()
-                                .url("https://api.biblioteca.com")
-                                .description("Servidor de Producción")
+                                .url("https://api.library.com")
+                                .description("Production Server")
                 ));
     }
 }
