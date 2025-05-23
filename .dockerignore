@@ -1,0 +1,23 @@
+# Gradle files
+.gradle/
+build/
+!build/libs/*.jar
+
+# Git files
+.git/
+.gitignore
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
